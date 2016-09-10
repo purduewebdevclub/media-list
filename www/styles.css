@@ -2,16 +2,33 @@ html {
 height: 100%;
 }
 
-body {
+body-home {
 height: 100%;
 background: url(https://images.unsplash.com/photo-1467173572719-f14b9fb86e5f?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=b734e103303c5965225682077ee72f86) no-repeat center center;
 background-size: cover;
+}
+
+body-page {
+height: 100%;
+background: url(https://images.unsplash.com/photo-1467348733814-f93fc480bec6?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=2635f17894dffc22d8073624dad76875) no-repeat center center;
+background-size: cover
 }
 
 .topdiv {
 top: 10%;
 transform: translateY(100%);
 color: white;
+}
+
+.pagediv {
+top: 10%;
+transform: translateY(50%); 
+color: white;
+}
+
+.pageheading {
+font-size: 50px;
+text-align: center;
 }
 
 .pdivs {
@@ -24,6 +41,14 @@ font-family: mrRobot;
 font-size: 25px;
 text-align: center;
 font-family: mrRobot;
+}
+
+.showlist {
+font-size: 40px;
+}
+
+.mrrobotspan {
+font-family: "mrRobot";
 }
 
 @font-face {
