@@ -48,12 +48,12 @@ html {
 }
 
 .mrrobotspan {
-    font-family: "mrRobot";
+    font-family: mrRobot;
 }
 
 @font-face {
-    font-family: "mrRobot";
-    src: url(mr-robot.ttf);
+    font-family: mrRobot;
+    src: url('mr-robot.ttf');
 }
 
 #proceed-button {
