@@ -3,26 +3,62 @@
     <head>
         <title>Simple App</title>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans">
         <link href="../styles.css" type="text/css" rel="stylesheet"/>
         <script src="./pages.js"></script>
     </head>
     <body class="b-page">
-        <div class="pagediv">
-            <h1 class="pageheading">Best shows</h1>
-            <ol class="showlist">
-                <li onclick="toggle('mr')"><span class="mrrobotspan">Mr Robot</span>
-                    <p style="visibility: hidden;" id="mr">Mr Robot is about...</p>
-                </li>
-                <li onclick="toggle('hoc')">
-                    House of Cards
-                    <p style="visibility: hidden;" id="hoc">House of Cards is about...</p>
-                </li>
-                <li onclick="toggle('dd')">
-                    Daredevil
-                    <p style="visibility: hidden;" id="dd">Daredevil is about...</p>
-                </li>
-            </ol>
-            <a href="./page2.html" class="btn btn-default" id="proceedbutton">></a>
+        <div class="container-fluid">
+            <div class="pagediv">
+                <h1 class="pageheading">Best Shows</h1>
+                <ol class="showlist">
+                    <li onclick="toggle('mr')" style="margin: 10px">
+                        <div class="row">
+                            <div class="col-xs-2">
+                                <img style="margin-right: 20px;" height="200px" src="https://images-na.ssl-images-amazon.com/images/M/MV5BMTYzMDE2MzI4MF5BMl5BanBnXkFtZTgwNTkxODgxOTE@._V1_UX182_CR0,0,182,268_AL_.jpg" >
+                            </div>
+                                <div class="col-xs-10">
+                                    <p style="vertical-align: top" class="mrrobotspan">Mr Robot</p>
+                                    <p style="vertical-align: top;" class="description" id="mr">Mr. Robot follows Elliot, a young programmer who works as a cyber-security engineer by day and a vigilante hacker by night. Elliot finds himself at a crossroad when the mysterious leader of an underground hacker group recruits him to destroy the corporation he is paid to protect.</p>
+                                </div>
+                        </div>
+                    </li>
+                    <li onclick="toggle('hoc')" style="margin: 10px">
+                        <div class="row">
+                            <div class="col-xs-2">
+                                <img style="margin-right: 20px;" height="200px" src="https://images-na.ssl-images-amazon.com/images/M/MV5BMjM3ODMyMjc3MV5BMl5BanBnXkFtZTgwNDgzNDc5NzE@._V1_UX182_CR0,0,182,268_AL_.jpg">
+                            </div>
+                            <div class="col-xs-10">
+                                <span style="vertical-align: top;font-weight: 600">HOUSE of CARDS</span>
+                                <p class="description" id="hoc">Majority House Whip Francis Underwood takes you on a long journey as he exacts his vengeance on those he feels wronged him - that is, his own cabinet members including the President of the United States himself. Dashing, cunning, methodical and vicious, Frank Underwood along with his equally manipulative yet ambiguous wife, Claire take Washington by storm through climbing the hierarchical ladder to power in this Americanized recreation of the BBC series of the same name.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li onclick="toggle('dd')" style="margin: 10px">
+                        <div class="row">
+                            <div class="col-xs-2">
+                                <img style="margin-right: 20px;" height="200px" src="https://images-na.ssl-images-amazon.com/images/M/MV5BNzUwMDEyMTIxM15BMl5BanBnXkFtZTgwNDU3OTYyODE@._V1_UX182_CR0,0,182,268_AL_.jpg">
+                            </div>
+                            <div class="col-xs-10">
+                                <span style="vertical-align: top;font-weight: 600;">DAREDEVIL</span>
+                                <p class="description" id="dd">As a child Matt Murdock was blinded by a chemical spill in a freak accident. Instead of limiting him it gave him superhuman senses that enabled him to see the world in a unique and powerful way. Now he uses these powers to deliver justice, not only as a lawyer in his own law firm, but also as vigilante at night, stalking the streets of Hell's Kitchen as Daredevil, the man without fear.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li onclick="toggle('bb')" style="margin: 10px">
+                        <div class="row">
+                            <div class="col-xs-2">
+                                <img style="margin-right: 20px;" height="200px" src="https://images-na.ssl-images-amazon.com/images/M/MV5BMTQ0ODYzODc0OV5BMl5BanBnXkFtZTgwMDk3OTcyMDE@._V1_UX182_CR0,0,182,268_AL_.jpg" >
+                            </div>
+                            <div class="col-xs-10">
+                                <p style="vertical-align: top; font-weight: 600;">BREAKING BAD</p>
+                                <p style="vertical-align: top;" class="description" id="bb">When chemistry teacher Walter White is diagnosed with Stage III cancer and given only two years to live, he decides he has nothing to lose. He lives with his teenage son, who has cerebral palsy, and his wife, in New Mexico. Determined to ensure that his family will have a secure future, Walt embarks on a career of drugs and crime. He proves to be remarkably proficient in this new world as he begins manufacturing and selling methamphetamine with one of his former students. The series tracks the impacts of a fatal diagnosis on a regular, hard working man, and explores how a fatal diagnosis affects his morality and transforms him into a major player of the drug trade.</p>
+                            </div>
+                        </div>
+                    </li>
+                </ol>
+                <a href="./page2.html" class="center-block btn btn-default" id="proceed-button">></a>
+            </div>
         </div>
     </body>
 </html>

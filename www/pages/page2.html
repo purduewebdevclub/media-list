@@ -3,17 +3,62 @@
     <head>
         <title>Simple App</title>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans">
         <link href="../styles.css" type="text/css" rel="stylesheet"/>
+        <script src="./pages.js"></script>
     </head>
-    <body class="body-page">
-        <div class="pagediv">
-            <h1 class="pageheading">Best shows</h1>
-            <ol class="showlist">
-                <li><span class="mrrobotspan">Mr Robot</span></li> 
-                <li>House of Cards</li>
-                <li>Daredevil</li>
-            </ol>
-            <a href="/page2.html" class="btn btn-default" id="proceedbutton">Proceed.</a>
+    <body class="b-page">
+        <div class="container-fluid">
+            <div class="pagediv">
+                <h1 class="pageheading">Best Movies</h1>
+                <ol class="showlist">
+                    <li onclick="toggle('sw')" style="margin: 10px">
+                        <div class="row">
+                            <div class="col-xs-2">
+                                <img style="margin-right: 20px;" height="200px" src="https://images-na.ssl-images-amazon.com/images/M/MV5BYmViY2M2MTYtY2MzOS00YjQ1LWIzYmEtOTBiNjhlMGM0NjZjXkEyXkFqcGdeQXVyNDYyMDk5MTU@._V1_UX182_CR0,0,182,268_AL_.jpg" >
+                            </div>
+                            <div class="col-xs-10">
+                                <span style="vertical-align: top; font-weight: 800;">STAR WARS: EPISODE V - THE EMPIRE STRIKES BACK</span>
+                                <p style="vertical-align: top;" class="description" id="sw">Mr. Robot follows Elliot, a young programmer who works as a cyber-security engineer by day and a vigilante hacker by night. Elliot finds himself at a crossroad when the mysterious leader of an underground hacker group recruits him to destroy the corporation he is paid to protect.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li onclick="toggle('hoc')" style="margin: 10px">
+                        <div class="row">
+                            <div class="col-xs-2">
+                                <img style="margin-right: 20px;" height="200px" src="https://images-na.ssl-images-amazon.com/images/M/MV5BMTczNTI2ODUwOF5BMl5BanBnXkFtZTcwMTU0NTIzMw@@._V1_UX182_CR0,0,182,268_AL_.jpg">
+                            </div>
+                            <div class="col-xs-10">
+                                <span style="vertical-align: top;font-weight: 800">IRON MAN</span>
+                                <p class="description" id="hoc">Majority House Whip Francis Underwood takes you on a long journey as he exacts his vengeance on those he feels wronged him - that is, his own cabinet members including the President of the United States himself. Dashing, cunning, methodical and vicious, Frank Underwood along with his equally manipulative yet ambiguous wife, Claire take Washington by storm through climbing the hierarchical ladder to power in this Americanized recreation of the BBC series of the same name.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li onclick="toggle('in')" style="margin: 10px">
+                        <div class="row">
+                            <div class="col-xs-2">
+                                <img style="margin-right: 20px;" height="200px" src="https://images-na.ssl-images-amazon.com/images/M/MV5BMjAxMzY3NjcxNF5BMl5BanBnXkFtZTcwNTI5OTM0Mw@@._V1_UX182_CR0,0,182,268_AL_.jpg">
+                            </div>
+                            <div class="col-xs-10">
+                                <span style="vertical-align: top;font-weight: 800;">Inception</span>
+                                <p class="description" id="in">Dom Cobb is a skilled thief, the absolute best in the dangerous art of extraction, stealing valuable secrets from deep within the subconscious during the dream state, when the mind is at its most vulnerable. Cobb's rare ability has made him a coveted player in this treacherous new world of corporate espionage, but it has also made him an international fugitive and cost him everything he has ever loved. Now Cobb is being offered a chance at redemption. One last job could give him his life back but only if he can accomplish the impossible - inception. Instead of the perfect heist, Cobb and his team of specialists have to pull off the reverse: their task is not to steal an idea but to plant one. If they succeed, it could be the perfect crime. But no amount of careful planning or expertise can prepare the team for the dangerous enemy that seems to predict their every move. An enemy that only Cobb could have seen coming.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li onclick="toggle('tm')" style="margin: 10px">
+                        <div class="row">
+                            <div class="col-xs-2">
+                                <img style="margin-right: 20px;" height="200px" src="https://images-na.ssl-images-amazon.com/images/M/MV5BMDMyMmQ5YzgtYWMxOC00OTU0LWIwZjEtZWUwYTY5MjVkZjhhXkEyXkFqcGdeQXVyNDYyMDk5MTU@._V1_UY268_CR6,0,182,268_AL_.jpg" >
+                            </div>
+                                <div class="col-xs-10">
+                                    <p style="vertical-align: top; font-weight: 800;">The Matrix</p>
+                                    <p style="vertical-align: top;" class="description" id="tm">Thomas A. Anderson is a man living two lives. By day he is an average computer programmer and by night a hacker known as Neo. Neo has always questioned his reality, but the truth is far beyond his imagination. Neo finds himself targeted by the police when he is contacted by Morpheus, a legendary computer hacker branded a terrorist by the government. Morpheus awakens Neo to the real world, a ravaged wasteland where most of humanity have been captured by a race of machines that live off of the humans' body heat and electrochemical energy and who imprison their minds within an artificial reality known as the Matrix. As a rebel against the machines, Neo must return to the Matrix and confront the agents: super-powerful computer programs devoted to snuffing out Neo and the entire human rebellion.</p>
+                                </div>
+                        </div>
+                    </li>
+                </ol>
+                <a href="./page2.html" class="center-block btn btn-default" id="proceed-button">></a>
+            </div>
         </div>
     </body>
 </html>
